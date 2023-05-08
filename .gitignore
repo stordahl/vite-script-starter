@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Template specific
+public/*.js
+public/*.cjs
+public/index.html
