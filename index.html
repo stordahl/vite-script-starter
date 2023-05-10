@@ -12,15 +12,17 @@
       <button id="btn">Click me to log an event!</button>
     </div>
 
-    <script type="module" src="/src/index.ts"></script>
-    <script type="module">
-      const logger = new EventLogger("my logger", "staging");
+    <script type="module" src="/src/index.ts" id="dev-script"></script>
+    <script>
+      document.getElementById("dev-script").addEventListener("load", () => {
+        const logger = new EventLogger("my logger", "staging");
       
-      logger.id();
+        logger.id();
 
-      const btn = document.getElementById("btn");
-      btn.addEventListener("click", () => {
-        logger.log({event_type: 'click', event_json: { "element_id": "btn" }})
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+          logger.log({event_type: 'click', event_json: { "element_id": "btn" }})
+        })
       })
     </script>
   </body>

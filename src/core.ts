@@ -1,7 +1,9 @@
 import type { Event } from './types'
 
-export function logEvent({ logger_id, env, event_type, event_json }:Event) {
+export function logEvent({ logger_id, env, event_type, event_json }:Event):Event {
   // Normally you'd send data to an api here, 
   // but in this template, we'll just log it
-  console.log({logger_id, env, event_type, event_json})
+  const event = {logger_id, env, event_type, event_json}
+  console.log(event)
+  return event
 }

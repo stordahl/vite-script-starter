@@ -26,4 +26,3 @@ dist-ssr
 # Template specific
 public/*.js
 public/*.cjs
-public/index.html
