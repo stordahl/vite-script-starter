@@ -10,6 +10,9 @@ class EventLogger {
     this.env = env
   }
 
+  /**
+    * @function
+    * @description logs an event with a given payload */
   log(payload:Payload){
     logEvent({...this, ...payload})
   }
