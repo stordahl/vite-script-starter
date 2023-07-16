@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/vite.svg">
+    <link rel="stylesheet" href="/sandbox.css" />
     <title>Third Party Script with Vite + TS</title>
   </head>
   <body>
-    <h1>Build Third-Party JS with Vite + Typscript</h1>
-
-    <div>
-      <button id="btn">Click me to log an event!</button>
+    <div id="container">
+      <div id="logos">
+        <img src="/vite.svg" alt="Vite logo"/>
+        <img src="/ts.svg" alt="TypeScript Logo"/>
+      </div>
+      <h1>Build Third-Party JS with Vite + Typscript</h1>
+      <div>
+        <button id="btn">Click me to log an event!</button>
+      </div>
     </div>
 
     <script type="module" src="/src/index.ts" id="dev-script"></script>
